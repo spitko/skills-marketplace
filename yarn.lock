@@ -636,6 +636,20 @@
   dependencies:
     "@radix-ui/react-compose-refs" "1.1.2"
 
+"@radix-ui/react-tabs@^1.1.1":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-tabs/-/react-tabs-1.1.13.tgz#3537ce379d7e7ff4eeb6b67a0973e139c2ac1f15"
+  integrity sha512-7xdcatg7/U+7+Udyoj2zodtI9H/IIopqo+YOIcZOq1nJwXWBZ9p8xiu5llXlekDbZkca79a/fozEYQXIA4sW6A==
+  dependencies:
+    "@radix-ui/primitive" "1.1.3"
+    "@radix-ui/react-context" "1.1.2"
+    "@radix-ui/react-direction" "1.1.1"
+    "@radix-ui/react-id" "1.1.1"
+    "@radix-ui/react-presence" "1.1.5"
+    "@radix-ui/react-primitive" "2.1.3"
+    "@radix-ui/react-roving-focus" "1.1.11"
+    "@radix-ui/react-use-controllable-state" "1.2.2"
+
 "@radix-ui/react-use-callback-ref@1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-use-callback-ref/-/react-use-callback-ref-1.1.1.tgz#62a4dba8b3255fdc5cc7787faeac1c6e4cc58d40"
@@ -1439,10 +1453,10 @@ cors@^2.8.5:
     object-assign "^4"
     vary "^1"
 
-creem@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/creem/-/creem-1.0.4.tgz#4946c2e4d3b86d588ad1a6825e18052802b84ea8"
-  integrity sha512-rVorKcs6ZJ7SMDcitjWdXPn9mr8Iwf5K98Hwp721x4zVO5uga9iAu+A8VoipnjfE+T4QTVqjP2HDLH3tR0OLRA==
+creem@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/creem/-/creem-1.0.5.tgz#615cfc5c1bfff65a1a166a9013a61beac6837952"
+  integrity sha512-Zg7WdTklxAkRGSjTvvrRdxM2QvL5/zWd7xwR+kPhF8Gf7w0eo0YzgWI+PCHuDG+UKyNhOVHPuBWkrPoUfmL3pA==
   dependencies:
     "@modelcontextprotocol/sdk" "^1.25.2"
     zod "^3.25.0 || ^4.0.0"
