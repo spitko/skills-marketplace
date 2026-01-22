@@ -47,8 +47,22 @@ export async function updateSession(request: NextRequest) {
   const { data } = await supabase.auth.getClaims();
   const user = data?.claims;
 
+  // Allow public access to certain routes
+  const publicPaths = [
+    "/",
+    "/api/checkout",
+    "/api/webhooks",
+    "/purchase-success",
+    "/auth",
+  ];
+  
+  const isPublicPath = publicPaths.some(path => 
+    request.nextUrl.pathname === path || 
+    request.nextUrl.pathname.startsWith(path)
+  );
+
   if (
-    request.nextUrl.pathname !== "/" &&
+    !isPublicPath &&
     !user &&
     !request.nextUrl.pathname.startsWith("/login") &&
     !request.nextUrl.pathname.startsWith("/auth")

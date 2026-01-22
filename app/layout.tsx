@@ -9,7 +9,7 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Claude Skills Marketplace",
+  title: "Skills Marketplace",
   description: "Discover powerful AI skills to enhance your workflow. From code review to content creation, find the perfect tools for your needs.",
 };
 

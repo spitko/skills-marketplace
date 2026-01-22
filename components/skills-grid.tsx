@@ -1,8 +1,13 @@
 import { Skill } from "@/types/skill";
 import { SkillCard } from "@/components/skill-card";
 
+interface SkillWithPurchaseStatus {
+  skill: Skill;
+  hasPurchased: boolean;
+}
+
 interface SkillsGridProps {
-  skills: Skill[];
+  skills: SkillWithPurchaseStatus[];
 }
 
 export function SkillsGrid({ skills }: SkillsGridProps) {
@@ -19,8 +24,8 @@ export function SkillsGrid({ skills }: SkillsGridProps) {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {skills.map((skill) => (
-        <SkillCard key={skill.id} skill={skill} />
+      {skills.map(({ skill, hasPurchased }) => (
+        <SkillCard key={skill.id} skill={skill} hasPurchased={hasPurchased} />
       ))}
     </div>
   );
