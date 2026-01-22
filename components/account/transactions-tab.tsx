@@ -33,7 +33,7 @@ export function TransactionsTab() {
           throw new Error("Failed to fetch transactions");
         }
         const data = await response.json();
-        setTransactions(data.data || []);
+        setTransactions(data.items || []);
       } catch (err) {
         setError(err instanceof Error ? err.message : "An error occurred");
       } finally {
